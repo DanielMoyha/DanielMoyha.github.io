@@ -80,17 +80,26 @@ body
   width: 1000px;
   height: 1610px;
 }
-h2.text
+h2.textW
 {
   position: absolute;
   color: #fff;
   font-size: 10vw;
+  margin-top: -2em;
+}
+
+h2.text
+{
+  position: absolute;
+  color: #fff;
+  font-size: 7vw;
 }
  .sec
 {
   min-height: 500px;
   padding: 100px;
 }
+
 .sec h2
 {
   font-size: 3.5em;

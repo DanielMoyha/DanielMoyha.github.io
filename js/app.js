@@ -29,6 +29,13 @@ gsap.to("#text", {
     y: 500,
 });
 
+gsap.to("#textW", {
+    scrollTrigger: {
+        scrub: 1
+    },
+    y: 400,
+});
+
 window.addEventListener("scroll", function() {
     let header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 500);
