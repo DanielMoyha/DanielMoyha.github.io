@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+
+/*SECCION MAIN*/
+.inicio{
+    padding-top: 0em;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../img/fondo2.svg);
+    margin-top: 3em;
+    height: 768px;
+    padding-left: 7em;
+    background-repeat: no-repeat;
+}
+.titulo{
+    font-family: 'Playball', cursive;
+    font-size: 7em;
+    color: #000;
+}
+
+.content-info{
+    margin-top:-3em;
+    color: #000;
+    /* margin-left: -28em; */
+}
+
+button{
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 3px 14px -8px rgba(0, 0, 0, 0.78);
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+.btn-toBuy, .leer-mas{
+    background-color: rgb(48, 57, 192);
+    padding: 8px 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+}
+
+.leer-mas{
+    background: none;
+    border: 1px solid #fff;
+    margin: 20px;
+}
+
+/* .main img{
+    margin-top: 3em;
+} */
+
+.main .imgBx img
+{
+	max-width: 400px;
+	animation: animate 4s linear infinite;
+    padding-right: 4em;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		transform: translateY(10px);
+	}
+	50%
+	{
+		transform: translateY(100px);
+	}
+}
+
+/* SECCION ABOUT */
+.about{
+    margin-top: 60px;
+}
+.about h2{
+    padding-top: 84px;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.about .divider{
+    background-color: #a2d9ff;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.about .about-content{
+    width: 90%;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    align-items: center;
+}
+
+.about .about-content h3{
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+/*SECCION SERVICIOS*/
+/* .servicios{
+    background: url(https://c.wallhere.com/photos/f3/fb/indoors_bar-186862.jpg!d);
+    height: 768px;
+} */
+.servicios{
+    height: 768px;
+}
+.servicios .bannerVideo
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.servicios .bannerVideo video
+{
+    position: absolute;
+    width: 100%;
+    
+    height: 101%;
+    object-fit: cover;
+    opacity: 0;
+}
+.servicios .bannerVideo video.active
+{
+    opacity: 1;
+}
+
+.containerServicios
+{
+    position: relative;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+.containerServicios::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 101%;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 15px rgba(0,0,0,0.05);
+}
+.containerServicios .contentServicios
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.containerServicios .contentServicios .bannerText
+{
+    position: relative;
+    max-width: 700px;
+}
+.containerServicios .contentServicios .bannerText div
+{
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+.containerServicios .contentServicios .bannerText div.active
+{
+    display: initial;
+}
+.containerServicios .contentServicios .bannerText div h2
+{
+    color: #fff;
+    font-size: 6em;
+    line-height: 1em;
+    font-weight: 700;
+}
+.containerServicios .contentServicios .bannerText div p
+{
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.controls
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+.controls li
+{
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    background-color: transparent !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 3em;
+}
+.controls li:hover 
+{
+    background: #f5f5f5;
+}
+
+@media (max-width:700px)
+{
+    .containerServicios
+    {
+        padding: 20px;
+    }
+    .containerServicios::before
+    {
+        width: 100%;
+    }
+    /* .containerServicios header
+    {
+        padding: 10px 20px;
+    } */
+    .containerServicios .contentServicios .bannerText
+    {
+        max-width: 100%;
+    }
+    .containerServicios .contentServicios .bannerText div h2
+    {
+        font-size: 3em;
+    }
+    .containerServicios .contentServicios .bannerText
+    {
+        text-align: center;
+    }
+    /* .containerServicios header ul
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        z-index: 1000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } */
+    /* .containerServicios header.active ul
+    {
+        display: flex;
+    }
+    .containerServicios header ul li 
+    {
+        text-align: center;
+        margin: 10px;
+    }
+    .containerServicios header ul li a
+    {
+        color: #333;
+        font-size: 1.5em;
+    }
+    .containerServicios header ul li a:hover 
+    {
+        color: #f00;
+    }
+    .menuIcon
+    {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: initial;
+        z-index: 10000;
+        background: #fff url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuIcon.active
+    {
+        background: #fff url(close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .sci li a
+    {
+        width: 50px;
+        height: 50px;
+    } */
+    .controls li
+    {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*SECCION Contactos*/
+.contactos{
+    padding-top: 5em;
+    /* height: 625px; */
+    /* background: #a2d9ff; */
+    background: rgb(196, 68, 36);
+}
+
+
+
+
+/* SECCION PRODUCTOS */
+.products{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+
+.row .container-products{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-products .content-product-info,
+.content-price{
+    display: flex;
+}
+
+.content-price .last-price{
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-right: 20px;
+}
+
+.content-price .new-price{
+    background-color: #ca4172;
+    padding: 5px 10px;
+    color: white;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 3em;
+}
+
+.content-product-info{
+    margin-top: 20px;
+}
+
+.content-product-info h4{
+    margin-left: 20px;
+}
+
+.products .btn-product{
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+}
+
+/* SECCION SUPPORT */
+.support{
+    background-color: #ca4172;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.support h2{
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.support .leer-mas{
+    margin-left: -.2em;
+}
+
+/* SECCION BANNER */
+.banner{
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto;  
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    height: 100vh;
+}
+
+.banner .rating{
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+.banner .secondary-info{
+    grid-column: 8 / 11;
+}
+
+.banner h2{
+    font-size: 3em;
+}
+
+.secondary-info h2,
+.secondary-info h3{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #8c50f1;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .menu li{
+    margin-top: 20px;
+}
+
+.footer .social-network .fab{
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+.footer .social-network .fab:hover{
+    color: #f7b733;
+    cursor: pointer;
+}
