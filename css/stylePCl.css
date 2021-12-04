@@ -68,8 +68,8 @@
 {
 	position: relative;
 	margin-top: -140px;
-	padding: 10px 15px;	
-	text-align: center;
+	padding: 10px 9px 10px 23px;
+	text-align: left;
 	color: #111;
 	visibility: hidden;
 	opacity: 0;

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/styleSection.css">
     <link rel="stylesheet" href="/css/stylePCl.css">
     
-    <title>Restaurant Temático DM</title>
+    <title>Restaurant Temático - Coffee</title>
     <link rel="shortcut icon" href="icons/ic_restaurant.svg">
 </head>
 
@@ -24,7 +24,7 @@
     <!--class="antialiased"-->
 
     <!--Header-->
-    <div>
+    
         <header>
             <div class="toggle"></div>
             <nav>
@@ -40,13 +40,25 @@
                 </ul>
             </nav>
         </header>
-    </div>
+    
 
     <section class="section-superior">
         <img src="/img/fondoRestaurant5.jpg" id="restaurant" class="">
 
         <h2 id="textW" class="textW">Welcome</h2>
         <h2 id="text" class="text">Restaurant</h2>
+
+        <div class="arrow-down">
+            <lord-icon
+                src="https://cdn.lordicon.com/bgywtgwo.json"
+                trigger="loop"
+                colors="primary:#e86830,secondary:#e83a30"
+                stroke="100"
+                scale="22"
+                style="width:250px;height:250px">
+            </lord-icon>
+        </div>
+
         <img src="/img/Hamburguesa2PNG.png" id="hamburguesa">
         <img src="/img/PapasFritasPNG.png " id="papasFritas">
     </section>
@@ -86,8 +98,6 @@
                             Queremos ofrecerte el marco perfecto para que estés a gusto, para que puedas conversar mientras disfrutas con todos tus sentidos la experiencia que vives. Quienes formamos el equipo de este espacio intentamos en todo momento escuchar lo que quieres para adaptarnos a lo que buscas.
 
                             Además, al estar situado junto al WiZink Center de Madrid, puedes visitarnos si vas a un evento en el recinto, te atenderemos lo más rápido posible para que llegues a tiempo, y al terminar, puedes volver a tomar algo y conversar con tus amigos sobre lo que has visto.
-
-
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6 mt-3 ">
@@ -186,19 +196,32 @@
     <div id="productos" class="mb-5">
         <div class="container">
             <div class="row">
-                <h1 class="text-center mb-5">PRODUCTOS</h1>
-
+                <h1 class="text-center mb-3">PRODUCTOS</h1>
+                <hr style="width: 65%; margin-left: 17%" class="mb-5">
+                <!--Almuerzos Bolvianos-->
                 <div class="col-lg-4">
                     <div class="card" data-aos="fade-up" data-aos-duration="800">
                         <div class="imgBx">
                             <img src="/img/products/Bolivia/Almuerzos/majadito.jpg" width="240px" height="240px">
                         </div>
                         <div class="contentProduct">
-                            <h4>Nombre: Majadito</h4>
-                            <h5>Bs. 10</h5>
-                            <h6>País: Bolvia</h6>
-                            <h6>Categoria: Almuerzo</h6>
-                            <p><strong>Descripción: Comida de Santa Cruz Bolivia</strong></p>
+                            <h5>
+                                <strong>Nombre:</strong> Majadito
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 10
+                            </h5>
+                            <h6>
+                                <strong>País:</strong> Bolvia
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i> Plato típico de Santa Cruz de la Sierra.</i>
+                                </small>
+                            </h7>
                         </div>
                     </div>
                 </div>
@@ -209,11 +232,23 @@
                             <img src="/img/products/Bolivia/Almuerzos/pollo-spiedo.jpg" width="240px" height="240px">
                         </div>
                         <div class="contentProduct">
-                            <h4>Nombre: Pollo Spiedo</h4>
-                            <h5>Bs. 15</h5>
-                            <h6>País: Bolivia</h6>
-                            <h6>Categoria: Almuerzo - Cena</h6>
-                            <p><strong>Descripción: Pollo con arroz</strong></p>
+                            <h5>
+                                <strong>Nombre:</strong> Pollo Spiedo
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 15
+                            </h5>
+                            <h6>
+                                <strong>País:</strong> Bolvia
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Pollo con arroz y papas fritas.</i>
+                                </small>
+                            </h7>
                         </div>
                     </div>
                 </div>
@@ -224,11 +259,23 @@
                             <img src="/img/products/Bolivia/Almuerzos/piqueMacho.jpg" width="240px" height="240px">
                         </div>
                         <div class="contentProduct">
-                            <h4>Nombre: Pique Macho</h4>
-                            <h5>Bs. 40</h5>
-                            <h6>País: Bolivia</h6>
-                            <h6>Categoria: Almuerzo</h6>
-                            <p><strong>Descripción: Comida de Cochabamba</strong></p>
+                            <h5>
+                                <strong>Nombre:</strong> Pique Macho
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 40
+                            </h5>
+                            <h6>
+                                <strong>País:</strong> Bolvia
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Cochabamba.</i>
+                                </small>
+                            </h7>
                         </div>
                     </div>
                 </div>
@@ -238,12 +285,327 @@
                         <div class="imgBx">
                             <img src="/img/products/Bolivia/Almuerzos/pollo-broaster.png" width="240px" height="240px">
                         </div>
+
                         <div class="contentProduct">
-                            <h4>Nombre: Pollo Broaster</h4>
-                            <h5>Bs. 15</h5>
-                            <h6>País: Bolivia</h6>
-                            <h6>Categoria: Almuerzo - Cena</h6>
-                            <p><strong>Descripción: Comida de La Paz</strong></p>
+                            <h5>
+                                <strong>Nombre:</strong> Pollo Broaster
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 15
+                            </h5>
+                            <h6>
+                                <strong>País:</strong> Bolvia
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Pollo frito con papas fritas.</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/Bolivia/Almuerzos/PlatoPaceño.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Plato Paceño
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 20
+                            </h5>
+                            <h6>
+                                <strong>País:</strong> Bolvia
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de la ciudad de La Paz</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Almuerzos Españoles -->
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/España/Almuerzo/cocido-madrileno.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Cocido Madrileño
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 35
+                            </h5>
+                            <h6>
+                                <strong>País:</strong> España
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Galicia</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/España/Almuerzo/paella.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Paella
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 45
+                            <h6>
+                                <strong>País:</strong> España
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Barcelona (incluye mariscos).</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/España/Almuerzo/tortilla-patatas.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Tortillas Esp.
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 20
+                            <h6>
+                                <strong>País:</strong> España
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Madrid - Barcelona.</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/España/Almuerzo/jamon-serrano.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Jamón Serrano
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 25
+                            <h6>
+                                <strong>País:</strong> España
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Barcelona.</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/España/Almuerzo/pulpo-a-la-gallega.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Pulpo a la Gallega
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 65
+                            <h6>
+                                <strong>País:</strong> España
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Galícia.</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Almuerzos Mexicanos -->
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/Mexico/Almuerzo/FRIJOLES-REFRITOS.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Frijoles
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 20
+                            <h6>
+                                <strong>País:</strong> México
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de la ciudad de México</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/Mexico/Almuerzo/Huevos-motulenos.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Huevos Motulenos
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 25
+                            <h6>
+                                <strong>País:</strong> México
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de Guadalajara - México.</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/Mexico/Almuerzo/Arroz-rojo.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Arroz Rojo
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 15
+                            <h6>
+                                <strong>País:</strong> México
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato liviano (ideal para personas vegetarianas).</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/Mexico/Almuerzo/cochito-al-horno.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Cochito al horno
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 20
+                            <h6>
+                                <strong>País:</strong> México
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato exquisito.</i>
+                                </small>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="imgBx">
+                            <img src="/img/products/Mexico/Almuerzo/tacos.jpg" width="240px" height="240px">
+                        </div>
+
+                        <div class="contentProduct">
+                            <h5>
+                                <strong>Nombre:</strong> Tacos
+                            </h5>
+                            <h5>
+                                <strong>Precio:</strong> Bs. 15
+                            <h6>
+                                <strong>País:</strong> México
+                            </h6>
+                            <h6>
+                                <strong>Categoría:</strong> Almuerzo/Cena
+                            </h6>
+                            <h7>
+                                <small>
+                                    <strong>Descripción:</strong> <i>Plato típico de la ciudad de México.</i>
+                                </small>
+                            </h7>
                         </div>
                     </div>
                 </div>
@@ -303,7 +665,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
-    
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 </body>
 
 </html>
