@@ -88,6 +88,9 @@ h2.text {
 	color: #fff;
 	font-size: 7vw;
 }
+.arrow-down {
+	margin-top: 26em !important;
+}
 .sec {
 	min-height: 500px;
 	padding: 100px;
@@ -108,7 +111,3 @@ h2.text {
   position: relative;
   z-index: 100000;
 } */
-
-.arrow-down {
-	margin-top: 26em;
-}
